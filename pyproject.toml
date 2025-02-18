@@ -1,7 +1,13 @@
 [project]
-name = "moccasin_project"
-version = "0.1.0"
+dependencies = []
 description = "Add your description here"
+name = "moccasin_project"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+version = "0.1.0"
+
+[tools.moccasin.project]
+src = "src"
+
+[tool.moccasin.project]
+dependencies = ["snekmate"]
