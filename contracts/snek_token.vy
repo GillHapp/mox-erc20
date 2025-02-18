@@ -19,6 +19,7 @@ from snekmate.auth import ownable as ow
 
 # from pcaversaccio.snekmate.src.snekmate.auth import ownable as ow
 
+
 initializes: ow
 from snekmate.tokens import erc20
 
@@ -45,6 +46,7 @@ def __init__(initial_supply: uint256):
     ow.__init__()
     erc20.__init__(NAME, SYMBOL, DECIMALS, NAME, EIP712_VERSOIN)
     erc20._mint(msg.sender, initial_supply)
+
 
 # This is a bug! Remove it (but our stateful tests should catch it!)
 @external

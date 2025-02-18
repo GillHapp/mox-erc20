@@ -1,6 +1,7 @@
 [project]
 dependencies = [
   "eth-utils>=5.2.0",
+  "mamushi>=0.0.4",
   "moccasin>=0.3.8",
 ]
 description = "Add your description here"
