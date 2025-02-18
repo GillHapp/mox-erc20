@@ -1,5 +1,8 @@
 [project]
-dependencies = []
+dependencies = [
+  "eth-utils>=5.2.0",
+  "moccasin>=0.3.8",
+]
 description = "Add your description here"
 name = "moccasin_project"
 readme = "README.md"
@@ -7,7 +10,7 @@ requires-python = ">=3.11"
 version = "0.1.0"
 
 [tools.moccasin.project]
-src = "src"
+src = "contracts"
 
 [tool.moccasin.project]
-dependencies = ["snekmate"]
+dependencies = ["snekmate", "eth_utils", "moccasin"]
